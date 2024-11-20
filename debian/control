@@ -1,15 +1,24 @@
-Source: template-repository
-Section: unknown
+Source: golang-github-kolo-xmlrpc
+Section: devel
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Maintainer: Debian Go Packaging Team <team+pkg-go@tracker.debian.org>
+Uploaders: Martín Ferrari <tincho@debian.org>,
+Build-Depends: debhelper-compat (= 13),
+               dh-golang,
+               golang-any,
+               golang-golang-x-text-dev,
+Standards-Version: 4.5.0
+Vcs-Git: https://salsa.debian.org/go-team/packages/golang-github-kolo-xmlrpc.git
+Vcs-Browser: https://salsa.debian.org/go-team/packages/golang-github-kolo-xmlrpc
+Homepage: https://github.com/kolo/xmlrpc
+XS-Go-Import-Path: github.com/kolo/xmlrpc
+Rules-Requires-Root: no
+Testsuite: autopkgtest-pkg-go
 
-Package: template-repository
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Package: golang-github-kolo-xmlrpc-dev
+Architecture: all
+Depends: ${misc:Depends},
+Multi-Arch: foreign
+Description: Implementation of the XMLRPC client protocol in Go
+ The github.com/kolo/xmlrpc package is an implementation of client side part of
+ XMLRPC protocol in the Go language.

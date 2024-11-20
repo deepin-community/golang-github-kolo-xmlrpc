@@ -1,5 +1,59 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-github-kolo-xmlrpc (0.0~git20200310.e035052-2) unstable; urgency=medium
 
-  * Initial release
+  [ Debian Janitor ]
+  * Apply multi-arch hints. + golang-github-kolo-xmlrpc-dev: Add Multi-Arch: foreign.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Wed, 23 Nov 2022 21:54:24 +0000
+
+golang-github-kolo-xmlrpc (0.0~git20200310.e035052-1) unstable; urgency=medium
+
+  * Team upload.
+  * Add uscan watch file
+  * New upstream version 0.0~git20200310.e035052
+  * Rename golang-x-text-dev to golang-golang-x-text-dev
+  * Bump debhelper-compat to 13
+  * Enable test in d/rules
+  * Bump Standards-Version to 4.5.0
+  * Add Rules-Requires-Root and autopkgtest-pkg-go
+
+ -- Shengjing Zhu <zhsj@debian.org>  Sun, 12 Jul 2020 18:02:56 +0800
+
+golang-github-kolo-xmlrpc (0+git20150413.0826b98-3) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Paul Tagliamonte ]
+  * Remove Built-Using from -dev package
+
+  [ Alexandre Viau ]
+  * Point Vcs-* urls to salsa.debian.org.
+
+  [ Jelmer Vernooĳ ]
+  * Change priority extra to priority optional.
+
+  [ Dr. Tobias Quathamer ]
+  * Use debhelper v11
+  * Update team name and address
+  * Update to Standards-Version 4.2.1
+    - Use HTTPS URL for d/copyright
+
+ -- Dr. Tobias Quathamer <toddy@debian.org>  Thu, 29 Nov 2018 21:55:00 +0100
+
+golang-github-kolo-xmlrpc (0+git20150413.0826b98-2) unstable; urgency=medium
+
+  * debian/control:
+    - Update Standards-Version with no changes.
+    - Add versioning to dh-golang dependency.
+    - Switch from golang-go to golang-any.
+    - Update Vcs-* to use HTTPS.
+    - Add XS-Go-Import-Path.
+  * debian/rules: Simplify using new dh-golang features, and use current
+    gen-orig-tgz.
+
+ -- Martín Ferrari <tincho@debian.org>  Wed, 15 Jun 2016 10:44:24 +0000
+
+golang-github-kolo-xmlrpc (0+git20150413.0826b98-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #810674)
+
+ -- Martín Ferrari <tincho@debian.org>  Mon, 11 Jan 2016 09:04:55 +0000
